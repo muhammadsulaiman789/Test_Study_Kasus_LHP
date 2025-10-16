@@ -1,0 +1,76 @@
+{
+    "report_date": "2025-10-16",
+    "tank_summaries": [
+        {
+            "tank_id": "T01",
+            "product": "CPO",
+            "opening_stock": 1500,
+            "total_in": 550,
+            "total_out": 0,
+            "calculated_closing_stock": 2050,
+            "physical_closing_stock": 2049.5,
+            "loss_gain": 0.5
+        },
+        {
+            "tank_id": "T02",
+            "product": "CPO",
+            "opening_stock": 2000,
+            "total_in": 0,
+            "total_out": 1000,
+            "calculated_closing_stock": 1000,
+            "physical_closing_stock": 999.8,
+            "loss_gain": 0.2
+        },
+        {
+            "tank_id": "T03",
+            "product": "RBDPO",
+            "opening_stock": 800,
+            "total_in": 990,
+            "total_out": 850,
+            "calculated_closing_stock": 940,
+            "physical_closing_stock": 940.1,
+            "loss_gain": -0.1
+        },
+        {
+            "tank_id": "T04",
+            "product": "Olein",
+            "opening_stock": 1200,
+            "total_in": 592,
+            "total_out": 700,
+            "calculated_closing_stock": 1092,
+            "physical_closing_stock": 1091.9,
+            "loss_gain": 0.1
+        },
+        {
+            "tank_id": "T05",
+            "product": "Stearin",
+            "opening_stock": 400,
+            "total_in": 198,
+            "total_out": 0,
+            "calculated_closing_stock": 598,
+            "physical_closing_stock": 598,
+            "loss_gain": 0
+        },
+        {
+            "tank_id": "T06",
+            "product": "Empty",
+            "opening_stock": 0,
+            "total_in": 0,
+            "total_out": 0,
+            "calculated_closing_stock": 0,
+            "physical_closing_stock": 0,
+            "loss_gain": 0
+        }
+    ],
+    "production_summary": {
+        "cpo_processed_ton": 1000,
+        "olein_produced_ton": 592,
+        "stearin_produced_ton": 198,
+        "total_product_produced_ton": 790,
+        "yield_percentage": 79
+    },
+    "transaction_summary": {
+        "total_received_ton": 500,
+        "total_sold_ton": 700
+    }
+}
