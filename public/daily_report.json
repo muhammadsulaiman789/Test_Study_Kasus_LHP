@@ -1,0 +1,67 @@
+{
+  "report_date": "2025-10-10",
+  "initial_stock": [
+    { "tank_id": "T01", "product": "CPO", "mass_ton": 1500.0 },
+    { "tank_id": "T02", "product": "CPO", "mass_ton": 2000.0 },
+    { "tank_id": "T03", "product": "RBDPO", "mass_ton": 800.0 },
+    { "tank_id": "T04", "product": "Olein", "mass_ton": 1200.0 },
+    { "tank_id": "T05", "product": "Stearin", "mass_ton": 400.0 },
+    { "tank_id": "T06", "product": "Empty", "mass_ton": 0.0 }
+  ],
+  "transactions": [
+    { "type": "RECEIVE", "product": "CPO", "to_tank_id": "T01", "quantity_ton": 500.0 },
+    {
+      "type": "PROCESS_OUT",
+      "from_tank_id": "T02",
+      "product": "CPO",
+      "quantity_ton": 1000.0,
+      "notes": "CPO dipompa ke unit Refinery"
+    },
+    {
+      "type": "PROCESS_IN",
+      "to_tank_id": "T03",
+      "product": "RBDPO",
+      "quantity_ton": 990.0,
+      "notes": "Hasil dari Refinery"
+    },
+    {
+      "type": "PROCESS_OUT",
+      "from_tank_id": "T03",
+      "product": "RBDPO",
+      "quantity_ton": 800.0,
+      "notes": "RBDPO dipompa ke unit Fraksinasi"
+    },
+    {
+      "type": "PROCESS_IN",
+      "to_tank_id": "T04",
+      "product": "Olein",
+      "quantity_ton": 592.0,
+      "notes": "Hasil Olein dari Fraksinasi"
+    },
+    {
+      "type": "PROCESS_IN",
+      "to_tank_id": "T05",
+      "product": "Stearin",
+      "quantity_ton": 198.0,
+      "notes": "Hasil Stearin dari Fraksinasi"
+    },
+    { "type": "SELL", "from_tank_id": "T04", "product": "Olein", "quantity_ton": 700.0 },
+    {
+      "type": "TRANSFER",
+      "from_tank_id": "T03",
+      "to_tank_id": "T01",
+      "source_product": "RBDPO",
+      "destination_product": "CPO",
+      "quantity_ton": 50.0,
+      "notes": "Downgrade kualitas RBDPO off-spec"
+    }
+  ],
+  "final_physical_stock": [
+    { "tank_id": "T01", "product": "CPO", "mass_ton": 2049.5 },
+    { "tank_id": "T02", "product": "CPO", "mass_ton": 999.8 },
+    { "tank_id": "T03", "product": "RBDPO", "mass_ton": 940.1 },
+    { "tank_id": "T04", "product": "Olein", "mass_ton": 1091.9 },
+    { "tank_id": "T05", "product": "Stearin", "mass_ton": 598.0 },
+    { "tank_id": "T06", "product": "Empty", "mass_ton": 0.0 }
+  ]
+}
